@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
+    "headless": "cypress run --headless",
     "e2e": "cypress run --headed --reporter cypress-mochawesome-reporter"
   },
   "author": "Ajay Singh",

@@ -1,6 +1,7 @@
 {
-    "baseUrl": "https://www.amazon.ca/",
-    "video": true,
+    "baseUrl": "https://www.amazon.com",
+    "video": false,
+    "retries": 0,
     "reporter": "cypress-mochawesome-reporter",
     "reporterOptions": {
       "reportDir": "cypress/reports",

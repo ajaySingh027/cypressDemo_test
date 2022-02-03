@@ -1,3 +1,5 @@
+import { landingPage } from "../../pageObjects/landing.page";
+
 describe('login page', () => {
 
     beforeEach(() => {
@@ -5,7 +7,9 @@ describe('login page', () => {
 
     it('navigate to login page', () => {
         cy.visit("/");
-        cy.get('#nav-link-accountList-nav-line-1').click();
-
+        cy.login(Cypress.env('testUser'), Cypress.env('password'));
+        cy.get(landingPage.selectors.LOGIN_USER)
+        .should('be.visible')
+        .should('have.text', landingPage.strings.LOGGED_USER);
     });
 });

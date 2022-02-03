@@ -6,7 +6,7 @@ describe('Amazon main page after login', () => {
     })
 
     it('should have all elements on landing page', () => {
-        cy.visit("/");
+        cy.visit('/');
         cy.get(landingPage.selectors.AMAZON_LOGO).should('be.visible');
         cy.get(landingPage.selectors.TOOL_BAR_SEARCH).should('be.visible');
         cy.get(landingPage.selectors.AMAZON_LOGO).should('be.visible');

@@ -9,8 +9,17 @@
 // ***********************************************
 //
 //
+
+import { loginPage } from "../pageObjects/login.page"
+
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add('login', (email, password) => { 
+    cy.get(loginPage.selectors.SIGNIN_BUTTON).click();
+    cy.get(loginPage.selectors.EMAIL_SIGNIN).type(email);
+    cy.get(loginPage.selectors.CONTINUE_BTN).click();
+    cy.get(loginPage.selectors.PASSWORD_SIGNIN).type(password);
+    cy.get(loginPage.selectors.LOGIN_SUBMIT_BTN).click();
+ })
 //
 //
 // -- This is a child command --

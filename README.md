@@ -19,6 +19,8 @@ This project requires NodeJs and npm installed as prerequisite.
       ```npm run cy:open```
 
   ![Plot](../tracktikAssign/cypress/fixtures/Cypress_runner.png)
+![Cypress_runner](https://user-images.githubusercontent.com/20476775/152457514-ace39124-8eb5-438a-a1dd-a1ce48164a43.png)
+
 
 
 this shows the runner window and specific test from different folders can be selected to run.

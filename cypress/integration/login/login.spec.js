@@ -6,7 +6,7 @@ describe('login page', () => {
     })
 
     it('navigate to login page', () => {
-        cy.visit("/");
+        cy.visit(Cypress.env('baseUrl') + '/');
         cy.login(Cypress.env('testUser'), Cypress.env('password'));
         cy.get(landingPage.selectors.LOGIN_USER)
         .should('be.visible')

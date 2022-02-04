@@ -3,7 +3,7 @@ import {landingPage} from "../../pageObjects/landing.page";
 
 describe('Amazon main page after login', () => {
     beforeEach(() => {
-        cy.visit('/');
+        cy.visit(Cypress.env('baseUrl') + '/');
     })
 
     it('should have the required elements on landing page', () => {

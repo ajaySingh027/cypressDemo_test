@@ -18,7 +18,6 @@ This project requires NodeJs and npm installed as prerequisite.
   
       ```npm run cy:open```
 
-  ![Plot](../tracktikAssign/cypress/fixtures/Cypress_runner.png)
 ![Cypress_runner](https://user-images.githubusercontent.com/20476775/152457514-ace39124-8eb5-438a-a1dd-a1ce48164a43.png)
 
 
@@ -26,7 +25,7 @@ This project requires NodeJs and npm installed as prerequisite.
 this shows the runner window and specific test from different folders can be selected to run.
 Browser value from dropdown can also changed in cypress runner window.
 
-![Result](../tracktikAssign/cypress/fixtures/Execution_cypressWindow.png)
+![Execution_cypressWindow](https://user-images.githubusercontent.com/20476775/152457585-a671b76d-066a-4d3d-89a9-571afbd6514a.png)
 
 
 
@@ -38,7 +37,9 @@ Browser value from dropdown can also changed in cypress runner window.
 It executes all tests in console and gives result same as in snapshot --
 
 
-![Result](../tracktikAssign/cypress/fixtures/Headless_run.png)
+
+![Headless_run](https://user-images.githubusercontent.com/20476775/152457606-2bfb72e8-f448-4afb-8f7c-c8340e49615a.png)
+
 
 
 
@@ -77,7 +78,9 @@ It executes all tests in console and gives result same as in snapshot --
 - reports are saved automatically in ```../reports``` folder
 Reports are generated as:-- 
 
-![Result](../tracktikAssign/cypress/fixtures/Reports_html.png)
+
+![Reports_html](https://user-images.githubusercontent.com/20476775/152457626-e87d23bb-0496-411c-90f6-ba0c21b4defa.png)
+
 
 
 

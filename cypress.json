@@ -1,7 +1,11 @@
 {
-    "baseUrl": "https://www.amazon.com",
     "video": false,
     "retries": 0,
+    "viewportHeight": 1080,
+    "viewportWidth": 1920,
+    "env": {
+      "baseUrl": "https://www.amazon.ca"
+    },
     "reporter": "cypress-mochawesome-reporter",
     "reporterOptions": {
       "reportDir": "cypress/reports",

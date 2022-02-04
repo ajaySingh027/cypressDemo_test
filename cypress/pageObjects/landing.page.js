@@ -9,7 +9,9 @@
             COUNTRY_SELECT: '.icp-nav-link-inner',
             LOGIN_USER: '#nav-link-accountList-nav-line-1',
             ORDERS_BUTTON: '#nav-orders',
-            CART_BUTTON: '#nav-cart'
+            CART_BUTTON: '#nav-cart',
+            GRID_CARD_LAYOUT: '#gw-card-layout',   // grid layout on main page
+            CARD_TYPE: '.fluid-fat-image-link'   // each card in grid layout
         };
     }
 

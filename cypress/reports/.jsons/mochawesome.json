@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-03T18:59:26.903Z",
+    "end": "2022-02-03T18:59:41.643Z",
+    "duration": 14740,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "adcb15f4-dd68-442d-9160-443fbb68e62d",
+      "title": "",
+      "fullFile": "cypress/integration/landingMain/amazonMain.spec.js",
+      "file": "cypress/integration/landingMain/amazonMain.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "24594cf7-4079-47f3-acdb-465c75642954",
+          "title": "Amazon main page after login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the required elements on landing page",
+              "fullTitle": "Amazon main page after login should have the required elements on landing page",
+              "timedOut": null,
+              "duration": 6852,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// verify the basic elements are present in main page toolbar\ncy.get(_landing.landingPage.selectors.AMAZON_LOGO).should('be.visible');\ncy.get(_landing.landingPage.selectors.TOOL_BAR_SEARCH).should('be.visible');\ncy.get(_landing.landingPage.selectors.CART_BUTTON).should('be.visible');\ncy.get(_landing.landingPage.selectors.ORDERS_BUTTON).should('be.visible');\ncy.get(_landing.landingPage.selectors.LOGIN_USER).should('be.visible');",
+              "err": {},
+              "uuid": "4fbbeeed-7ba8-402c-b096-b5d0a0075cf5",
+              "parentUUID": "24594cf7-4079-47f3-acdb-465c75642954",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify the grid layout on main page",
+              "fullTitle": "Amazon main page after login verify the grid layout on main page",
+              "timedOut": null,
+              "duration": 6446,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// verify the grid layout\ncy.get(_landing.landingPage.selectors.GRID_CARD_LAYOUT).should('be.visible'); // verify number of card types in grid layout\ncy.get(_landing.landingPage.selectors.GRID_CARD_LAYOUT).within(() => {\n  cy.get(_landing.landingPage.selectors.CARD_TYPE).should('have.length', 7);\n});",
+              "err": {},
+              "uuid": "6e7239a9-79fa-416e-a62a-b8e280f3c571",
+              "parentUUID": "24594cf7-4079-47f3-acdb-465c75642954",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4fbbeeed-7ba8-402c-b096-b5d0a0075cf5",
+            "6e7239a9-79fa-416e-a62a-b8e280f3c571"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13298,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/.jsons",
+        "overwrite": false,
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -8,15 +8,15 @@ This project requires NodeJs and npm installed as prerequisite.
 
 ## How to get the project and install dependencies
 
-      ```git clone <<repository_path>>```
-      ```cd tracktikAssign```
-      ```npm install```
+      git clone <<repository_path>>
+      cd tracktikAssign
+      npm install
 
 ## To get the cypress running :
 ### Scripts added in project can run automation in different ways -
 - To open the cypress runner:
   
-      ```npm run cy:open```
+      npm run cy:open
 
 ![Cypress_runner](https://user-images.githubusercontent.com/20476775/152457514-ace39124-8eb5-438a-a1dd-a1ce48164a43.png)
 
@@ -32,7 +32,7 @@ Browser value from dropdown can also changed in cypress runner window.
 
 - To run all scripts in headless mode
 
-      ```npm run headless```
+      npm run headless
 
 It executes all tests in console and gives result same as in snapshot --
 
@@ -46,7 +46,7 @@ It executes all tests in console and gives result same as in snapshot --
 
 - To run all scripts in headed browser mode with reports generated
 
-      ```npm run e2e```
+      npm run e2e
 
 
 
@@ -55,23 +55,23 @@ It executes all tests in console and gives result same as in snapshot --
 - To run scripts with new domain url
 (by default baseUrl value set in scripts is overritten by commandline value)
 
-      ```npm run e2e -- --env baseUrl=https://www.amazon.com```
+      npm run e2e -- --env baseUrl=https://www.amazon.com
 
 
 - To run automaiton in different browsers:
 
-      ```npm run e2e -- --browser chrome```
+      npm run e2e -- --browser chrome
 
 
 - To run automation for particular spec file:
 
-      ```npm run e2e -- --spec "<path_of_spec_file>"```
+      npm run e2e -- --spec "<path_of_spec_file>"
 
 
 ### Environment variables can be changed in ``cypress.json`` file
-- values such folder path for saving snapshots or videos of execution
+- values such as folder path for saving snapshots or videos of execution
 
-      ``` {  "video": false  } ```
+       {  "video": false  } 
 
 
 ### HTML reports are generated using npm ```mochawesome``` library:
